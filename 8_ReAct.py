@@ -1,8 +1,10 @@
 """
 Python code for ReAct Prompting
 
-This script demonstrates the concept of ReAct (Reason + Act) by integrating reasoning tasks with an external calculator tool.
-The AI solves a mathematical problem, uses an external function to perform the calculation, and then provides reasoning on how the result was achieved.
+This script demonstrates the concept of ReAct (Reason + Act) by integrating reasoning tasks with an external calculator tool, as below: 
+    1. Reasoning: In the prompt, we explicitly ask the model to reason first about how it will perform the calculation. This step showcases the "reasoning" part of ReAct, where the model must explain its thinking before acting.
+    2. Action: After reasoning, the model is instructed to perform the action by completing the calculation (15 + 27). This is the action part of the ReAct process, where the model actually solves the problem based on its reasoning.
+    3. External Tool Simulation: While we are simulating the use of an external tool (e.g. a calculator) with a reasoning step before action, in a more complex example, the external tool could be something like querying an API, fetching data from a database, or running code to calculate the result.
 
 Steps:
 1. Reads the OpenAI API key from 'key.txt' for authentication.
@@ -18,11 +20,9 @@ Requirements:
 import openai
 
 # Define the path to your API key file
-# This is where the OpenAI API key is stored for secure authentication
-api_key_file_path = r'C:\Users\Amir\Desktop\Joy_of_AI\My_Publications_GenAI\Git_Codes\search_app\key.txt'
+api_key_file_path = r'<path to the text file including your OpenAI API Key>'
 
 # Read the API key from the file
-# This reads the API key from a local file and strips any extra whitespace
 with open(api_key_file_path, 'r') as file:
     openai.api_key = file.read().strip()
     
