@@ -13,7 +13,7 @@ This repo provides practical examples and python codes for fundamental technique
 **Further Info** <br>
 Check out the full article: https://lnkd.in/gCZjb63x
 
-**Configuration Used to Run the Code** 
+**Configuration Used to Run the Code** <br>
 Python Version 3.11.9
 IDE Visual Studio Code
 openai package version 0.28.0
