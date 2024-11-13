@@ -14,8 +14,8 @@ This repo provides practical examples and python codes for fundamental technique
 Check out the full article: https://lnkd.in/gCZjb63x
 
 **Configuration Used to Run the Code** <br>
-Python Version 3.11.9  <br>
-IDE Visual Studio Code  <br>
-openai package version 0.28.0  <br>
+*Python Version 3.11.9  <br>
+*IDE Visual Studio Code  <br>
+*openai package version 0.28.0  <br>
 
 Please feel free to reach out if you have any questions regarding the article or any of the provided codes.
